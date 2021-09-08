@@ -214,6 +214,16 @@ progress::-webkit-progress-value {
     border-radius: 10px;
 }
 
+progress::-moz-progress-bar {
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-value {
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 10px;
+}
+
 /* ABOUT SECTION STYLES */
 
 #about-sec {
