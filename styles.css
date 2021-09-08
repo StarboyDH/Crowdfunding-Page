@@ -1,0 +1,697 @@
+/* GENERAL STYLES */
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    outline: none;
+}
+
+li {
+    display: inline-block;
+    color:#fafafa;
+    font-family: 'Commissioner', sans-serif;
+}
+
+h1, h2, h3, p, button {
+    font-family: 'Commissioner', sans-serif;
+}
+
+*:not(#navlist) {
+    transition: 0.5s ease-in-out;
+}
+
+/* HEADER STYLES */
+
+header {
+    height: 360px;
+    padding: 20px;
+    background-image: url("images/image-hero-desktop.jpg");
+    background-size: auto;
+}
+
+/* NAVBAR STYLES */
+
+nav {
+    margin-top: 20px;
+    padding: 0 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navlist {
+    padding: 0;
+}
+
+.navitems {
+    margin: 0 20px;
+}
+
+.navlinks:hover {
+    color: hsl(0, 0%, 92%);
+}
+
+#hamburger {
+    display: none;
+}
+
+/* MAIN SECTION STYLES */
+
+main {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INTEO SECTION STYLES */
+
+#intro {
+    width: 100%;
+    height: 200px;
+    margin-top: -90px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#mastercraft-logo {
+    margin-top: -45px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+#subtitle {
+    margin-top: -7px;
+    color: hsl(0, 0%, 48%);
+}
+
+#main-buttons {
+    width: 80%;
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-btns {
+    cursor: pointer;
+}
+
+#back-project {
+    width: 150px;
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 50%, 47%);
+    border-radius: 30px;
+}
+
+#back-project:hover {
+    background-color: hsl(176, 72%, 28%);
+    border-color: hsl(176, 72%, 28%);
+}
+
+#bookmark {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+}
+
+#bookmark:hover {
+    background-color: hsl(0, 0%, 60%);
+    border-color: hsl(0, 0%, 60%);
+}
+
+#bookmark:hover > b {
+    color: white;
+}
+
+#bookmark-img {
+    max-width: 40px;
+    margin-left: -10px;
+}
+
+b {
+    margin-left: 10px;
+    color: hsl(0, 0%, 48%);
+}
+
+/* BACKING SECTION STYLES */
+
+#backing {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.num-blocks {
+    width: 33%;
+    padding-left: 20px;
+}
+
+.nums {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.dis {
+    margin-top: -18px;
+    font-size: 13px;
+    color: hsl(0, 0%, 48%);
+}
+
+#total-backers {
+    border-left: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+progress {
+    width: 98%;
+    margin-top: 20px;
+    border: 1px solid #FFF;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 10px;
+}
+
+/* ABOUT SECTION STYLES */
+
+#about-sec {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h2 {
+    padding: 0 10px;
+}
+
+#about-para {
+    padding: 0 10px;
+    color: hsl(0, 0%, 60%);
+    line-height: 25px;
+}
+
+/* PROJECTS BOXES STYLES */
+
+.stands {
+    margin: 30px 0;
+    padding: 15px 25px;
+    display: grid;
+    grid: auto auto auto / auto auto;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.price {
+    justify-self: right;
+    color: hsl(162, 79%, 44%);
+    font-weight: 500;
+}
+
+.project-info {
+    grid-area: main;
+    color: hsl(0, 0%, 60%);
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.reward-btns {
+    width: 150px;
+    height: 50px;
+    background-color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 50%, 47%);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    justify-self: right;
+    align-self: center;
+}
+
+.reward-btns:hover {
+    background-color: hsl(176, 72%, 28%);
+    border: 1px solid hsl(176, 72%, 28%);
+}
+
+.num-left {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.left {
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(0, 0%, 48%);
+}
+
+/* LAST PROJECT STYLES */
+
+.stands:last-child {
+    border-color: hsl(0, 0%, 92%);
+    color: hsl(0, 0%, 60%);
+}
+
+.stands:last-child > button {
+    background-color: hsl(0, 0%, 60%);
+    border-color: hsl(0, 0%, 60%);
+    cursor: auto;
+}
+
+.stands:last-child > .price {
+    color: hsl(162, 71%, 60%);
+}
+
+
+/* MODAL STYLES */
+
+#popup {
+    display: none;
+    width: 100%;
+    margin-top: -250px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#popup-para {
+    padding: 0 10px;
+}
+
+#close-img {
+    position: relative;
+    top: 10px;
+    left: 580px;
+    cursor: pointer;
+}
+
+.popup-projects {
+    margin: 30px 0;
+    display: grid;
+    grid: auto auto auto auto / auto auto 150px auto auto;
+    grid-template-areas: 
+        "a1 a2 a3 . a5"
+        ". b b b b"
+        "c c c c c"
+        "d d d d d";
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+}
+
+.circles {
+    grid-area: a1;
+    width: 22px;
+    aspect-ratio: 1;
+    margin:  25px 20px;
+    display: flex;
+    align-content: center;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.fills {
+    display: none;
+    margin: auto auto;
+    width: 16px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    background-color: hsl(162, 79%, 44%);
+}
+
+.popup-project-titles {
+    grid-area: a2;
+    align-self: center;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-project-titles:hover  {
+    color: hsl(162, 79%, 44%);
+}
+
+.project-price {
+    grid-area: a3;
+    align-self: center;
+    color: hsl(176, 50%, 47%);
+    font-size: 14px;
+}
+
+.project-days {
+    grid-area: a5;
+    align-self: center;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.project-left {
+    font-weight: 400;
+    font-size: 12px;
+    color: hsl(0, 0%, 60%);
+}
+
+.project-details {
+    grid-area: b;
+    align-self: center;
+    color: hsl(0, 0%, 60%);
+}
+
+.popup-btns {
+    margin-top: 20px;
+    padding: 10px 0;
+    grid-area: d;
+    display: none;
+    align-items: center;
+    border-top: 1px solid hsl(0, 0%, 80%);
+}
+
+.your-pledge {
+    margin-left: 20px;
+    margin-right: 280px;
+    font-size: 14px;
+    color: hsl(0, 0%, 48%);
+}
+
+.pledges {
+    padding: 0 8px;
+    margin-right: 10px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 30px;
+    direction: rtl;
+}
+
+.pledges:focus {
+    outline: none;
+}
+
+.done {
+    width: 80px;
+    height: 40px;
+    background-color: hsl(162, 79%, 44%);
+    border: 1px solid hsl(162, 79%, 44%);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.done:hover {
+    background-color: hsl(176, 72%, 28%);
+    border: 1px solid hsl(176, 72%, 28%);   
+}
+
+.done:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#pc-4, #pc-4 > .project-details, #pc-4 > .project-price {
+    color:hsl(0, 0%, 80%);
+    border-color: hsl(0, 0%, 92%);
+}
+
+/* THNKS BOX STYLES */
+
+#complete {
+    width: 320px;
+    aspect-ratio: 1;
+    margin-bottom: 400px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#thnx-para {
+    margin-top: -10px;
+    color: hsl(0, 0%, 48%);
+}
+
+#gotIt {
+    width: 100px;
+    height: 40px;
+    background-color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 50%, 47%);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;   
+}
+
+#gotIt:hover {
+    background-color: hsl(162, 79%, 44%);
+    border-color: hsl(162, 79%, 44%);
+}
+
+::selection {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+}
+
+
+/* ** MOBILE VIEW SYTLES ** */
+
+@media screen and (max-width: 771px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #intro {
+        width: 300px;
+        height: 250px;
+        text-align: center;
+    }
+
+    #main-buttons {
+        width: 250px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #back-project {
+        width: 180px;
+        margin-right: 20px;
+    }
+
+    #bookmark:last-child > b {
+        display: none;
+    }
+
+    #bookmark {
+        width: 20px;
+    }
+
+
+    #backing {
+        width: 300px;
+        height: 500px;
+    }
+
+    #numbers {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    #total-backers {
+        border-left: 0;
+        border-right: 0;
+        border-top: 1px solid hsl(0, 0%, 80%);
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+    }
+
+    .num-blocks {
+        width: 200px;
+        padding: 10px 0;
+    }
+
+
+    #about-sec {
+        width: 300px;
+    }
+
+    .stands {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reward-btns {
+        align-self: flex-start;
+    }
+
+
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    #hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    #navlist {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 10px;    
+    }
+
+    .navitems {
+        margin: 0;
+        padding: 20px;
+        color: black;
+        font-weight: 700;
+    }
+
+    #discover {
+        border-top: 1px solid hsl(0, 0%, 80%);
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+    }
+
+
+    #popup {
+        width: 300px;
+    }
+
+    .popup-projects {
+        display: grid;
+        grid: 60px 50px auto auto auto / 70px auto;
+        grid-template-areas: 
+        "c t"
+        "c p"
+        "d d"
+        "l l"
+        "b b";
+    }
+
+    .circles {
+        grid-area: c;
+    }
+
+    .popup-project-titles {
+        grid-area: t;
+        align-self: flex-end;
+    }
+
+    .project-price {
+        grid-area: p;
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    .project-details {
+        grid-area: d;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .project-days {
+        grid-area: l;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .popup-btns {
+        grid-area: b;
+        width: 300px;
+        display: none;
+        grid-template-areas: 
+        "p p"
+        "b1 b2";
+    }
+
+    .your-pledge {
+        grid-area: p;
+        margin: 10px 0;
+        padding-bottom: 10px;
+        justify-self: center;
+    }
+
+    .pledges {
+        grid-area: b1;
+        justify-self: center;
+    }
+
+    .done {
+        grid-area: b2;
+        justify-self: center;
+    }
+
+    #close-img {
+        top: 0;
+        left: 95%;
+    }
+
+}
